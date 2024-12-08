@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+div{
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding:2em;
+    margin: 20px;
+    border-radius: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 150ms linear;
+    overflow: hidden;
+}
+div:nth-child(1){
+    filter:hue-rotate(270deg)
+}
+div:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+div:hover{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    box-shadow: 0px 0px 10px aqua, 0 0  25px aqua, 0 0 40px aqua;
+    background-color: aqua;
+    color: black;
+}
+div span:nth-child(1){
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top:0;
+    left: 0;
+    background: linear-gradient(to right, transparent, aqua);
+    animation: head 1s linear infinite;
+}
+@keyframes head{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+div span:nth-child(2){
+    display: inline-block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top:0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, aqua);
+    animation: riside 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes riside{
+    0%{
+        top:-100%
+    }
+    50%,
+    100%{
+        top:100%;
+    }
+}
+div span:nth-child(3){
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to left, transparent, aqua);
+    animation: bot 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes bot{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+div span:nth-child(4){
+    display: inline-block;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    bottom:0;
+    left: 0;
+    background: linear-gradient(to top, transparent, aqua);
+    animation: leside 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes leside{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
