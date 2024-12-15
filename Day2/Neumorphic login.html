@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Neumorphism Login</title>
+    <link rel="stylesheet" href="Neumorphic login.css">
+</head>
+<body>
+    <script src="Neumorphic login.js"></script>
+    <main>
+        <div class="container">
+            <div class="segment-1" id="signUp-form">
+                <h2>Create Account</h2>
+                <span>
+                    <img src="linkedin.png" alt="">
+                    <img src="facebook.png" alt="">
+                    <img src="x.png" alt="">
+                </span>
+                <p>or use email for registration</p>
+                <form action="">
+                    <input type="text" id="Name" placeholder="Name"><br>
+                    <input type="email" id="email" placeholder="Email"><br>
+                    <input type="password" id="password" placeholder="Password"><br>
+                    <button>SIGN UP</button>
+                </form>
+            </div>
+            <div class="segment-1" id="signIn-form">
+                <h2>Sign in to Website</h2>
+                <span>
+                    <img src="linkedin.png" alt="">
+                    <img src="facebook.png" alt="">
+                    <img src="x.png" alt="">
+                </span>
+                <p>or use email account</p>
+                <form action="">
+                    <input type="email" id="email" placeholder="Email"><br>
+                    <input type="password" id="password" placeholder="Password"><br>
+                    <a href="">Forgot your password</a><br>
+                    <button>SIGN IN</button>
+                </form>
+            </div>
+            <div class="segment-2" id="signIn">
+                <h2>Welcome Back !</h2>
+                <p>To keep connected with us please login your personal info</p>
+                <button onclick="signin(event)" id="si">SIGN IN</button>
+            </div>
+            <div class="segment-2" id="signUp">
+                <h2>Hello Friend !</h2>
+                <p>Enter your personal details and start journey with us</p>
+                <button onclick="signup(event)" id="su" >SIGN UP</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
