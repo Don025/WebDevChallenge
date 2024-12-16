@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="circles">
+                <div class="circle" id="red"></div>
+                <div class="circle" id="yellow"></div>
+                <div class="circle" id="green"></div>
+            </div>
+            <div class="Dashboard_Container">
+                <ul class="y1">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 700" width="20px" fill="black"><path d="M216-144q-29 0-50.5-21.5T144-216v-528q0-29.7 21.5-50.85Q187-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29-21.15 50.5T744-144H216Zm0-72h528v-144H632q-23 43-63.5 69.5T480-264q-49 0-89.5-26T328-360H216v144Zm264-120q40 0 68-28t28-68h168v-312H216v312h168q0 40 28 68t68 28ZM216-216h528-528Z"/></svg>Inbox</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 700" width="20px" fill="black"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>Today</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 760" width="20px" fill="black"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-96h72v96h240v-96h72v96h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Z"/></svg>Upcoming</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 760" width="20px" fill="black"><path d="m264-192 30-120H144l18-72h150l42-168H192l18-72h162l36-144h72l-36 144h144l36-144h72l-36 144h156l-18 72H642l-42 168h168l-18 72H582l-30 120h-72l30-120H366l-30 120h-72Zm120-192h144l42-168H426l-42 168Z"/></svg>Important</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 700" width="20px" fill="black"><path d="M96-192v-92q0-25.78 12.5-47.39T143-366q54-32 114.5-49T384-432q66 0 126.5 17T625-366q22 13 34.5 34.61T672-284v92H96Zm648 0v-92q0-42-19.5-78T672-421q39 8 75.5 21.5T817-366q22 13 34.5 34.67Q864-309.65 864-284v92H744ZM384-480q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42Zm336-144q0 60-42 102t-102 42q-8 0-15-.5t-15-2.5q25-29 39.5-64.5T600-624q0-41-14.5-76.5T546-765q8-2 15-2.5t15-.5q60 0 102 42t42 102ZM168-264h432v-20q0-6.47-3.03-11.76-3.02-5.3-7.97-8.24-47-27-99-41.5T384-360q-54 0-106 14t-99 42q-4.95 2.83-7.98 7.91-3.02 5.09-3.02 12V-264Zm216.21-288Q414-552 435-573.21t21-51Q456-654 434.79-675t-51-21Q354-696 333-674.79t-21 51Q312-594 333.21-573t51 21ZM384-264Zm0-360Z"/></svg>Meeting</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 700" width="20px" fill="black"><path d="M312-144q-29.7 0-50.85-21.15Q240-186.3 240-216v-480h-48v-72h192v-48h192v48h192v72h-48v479.57Q720-186 698.85-165T648-144H312Zm336-552H312v480h336v-480ZM384-288h72v-336h-72v336Zm120 0h72v-336h-72v336ZM312-696v480-480Z"/></svg>Trash</li><br>
+                </ul>
+                <ul class="y">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 700" width="20px" fill="black"><path d="M96-192v-92q0-25.78 12.5-47.39T143-366q54-32 114.5-49T384-432q66 0 126.5 17T625-366q22 13 34.5 34.61T672-284v92H96Zm648 0v-92q0-42-19.5-78T672-421q39 8 75.5 21.5T817-366q22 13 34.5 34.67Q864-309.65 864-284v92H744ZM384-480q-60 0-102-42t-42-102q0-60 42-102t102-42q60 0 102 42t42 102q0 60-42 102t-102 42Zm336-144q0 60-42 102t-102 42q-8 0-15-.5t-15-2.5q25-29 39.5-64.5T600-624q0-41-14.5-76.5T546-765q8-2 15-2.5t15-.5q60 0 102 42t42 102ZM168-264h432v-20q0-6.47-3.03-11.76-3.02-5.3-7.97-8.24-47-27-99-41.5T384-360q-54 0-106 14t-99 42q-4.95 2.83-7.98 7.91-3.02 5.09-3.02 12V-264Zm216.21-288Q414-552 435-573.21t21-51Q456-654 434.79-675t-51-21Q354-696 333-674.79t-21 51Q312-594 333.21-573t51 21ZM384-264Zm0-360Z"/></svg>Family</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 760" width="20px" fill="black"><path d="M444-768v-144h72v144h-72Zm265 112-54-52 104-102 52 50-102 104Zm59 212v-72h144v72H768ZM444-48v-144h72v144h-72ZM251-658 147-760l54-50 101 101-51 51Zm509 511L659-252l50-50 104 100-53 55ZM48-444v-72h144v72H48Zm152 297-51-53 102-100 25 24 24 25-100 104Zm280-93q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-72q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Zm0-168Z"/></svg>Vacation</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 700" width="20px" fill="black"><path d="m147-209-51-51 281-281 152 152 212-211H624v-72h240v240h-72v-117L529-287 377-439 147-209Z"/></svg>Festival</li><br>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 760" width="20px" fill="black"><path d="m437-249 183-231H471l26-221-173 269h146l-33 183ZM336-96l48-264H192l324-504h72l-36 312h216L408-96h-72Zm136-379Z"/></svg>Conserts</li><br>
+                </ul>
+            </div>
+            <div class="List_Container">
+                <div>
+                    <h2 class="top">Today Tasks</h2>
+                    <div class="x1">
+                        <input type="radio" id="item1" name="item" checked>
+                        <label for="item1" class="radio-label">All</label>
+                        <input type="radio" id="item2" name="item">
+                        <label for="item2" class="radio-label">Important</label>
+                        <input type="radio" id="item3" name="item">
+                        <label for="item3" class="radio-label">Notes</label>
+                        <input type="radio" id="item4" name="item">
+                        <label for="item4" class="radio-label">Link</label>
+                    </div>
+                </div>
+                <div class="list">
+                    <form action="">
+                        <input type="checkbox" id="t1">
+                        <label for="t1">Dashboard Design Implementation</label><span class="Approved">Approved</span><br>
+                        <input type="checkbox" id="t2">
+                        <label for="t2">Create a userflow</label><span class="inprog">In Progress</span><br>
+                        <input type="checkbox" id="t3">
+                        <label for="t3">Application Implementation</label><span class="inrev">In Review</span><br>
+                        <input type="checkbox" id="t4">
+                        <label for="t4">Create a Dashboard Design</label><span class="inprog">In Progress</span><br>
+                        <input type="checkbox" id="t5">
+                        <label for="t5">Create a Web Application Design</label><span class="Approved">Approved</span><br>
+                        <input type="checkbox" id="t6">
+                        <label for="t6">Interactive Design</label><span class="inrev">In Review</span><br>
+                    </form>
+                </div>
+                <div class="list">
+                    <h2>Upcoming Tasks</h2>
+                    <form action="">
+                        <input type="checkbox" id="t7">
+                        <label for="t7">Dashboard Design Implementation</label><span class="waiting">Waiting</span><br>
+                        <input type="checkbox" id="t8">
+                        <label for="t8">Create a userflow</label><span class="waiting">Waiting</span><br>
+                        <input type="checkbox" id="t9">
+                        <label for="t9">Application Implementation</label><span class="waiting">Waiting</span><br>
+                        <input type="checkbox" id="t10">
+                        <label for="t10">Create a Dashboard Design</label><span class="waiting">Waiting</span><br>
+                        <input type="checkbox" id="t11">
+                        <label for="t11">Create a Web Application Design</label><span class="waiting">Waiting</span><br>
+                        <input type="checkbox" id="t12">
+                        <label for="t12">Interactive Design</label><span class="waiting">Waiting</span><br>
+                    </form>
+                </div>
+            </div>
+            <div class="Schedule">
+                <h2 class="top">Schedule</h2>
+                <div id="orange">
+                    <p>08:00-09:00Am</p>
+                    <span>Product Review</span><br>
+                    <img src="Person-1.jpg" alt="" width="80px">
+                    <img src="Person-2.jpg" alt="" width="80px">
+                    <img src="Person-3.jpg" alt="" width="80px">
+                    <img src="Person-4.jpg" alt="" width="80px">
+                </div>
+                <div id="blue">
+                    <p>09:00-10:00Am</p>
+                    <span>Design Meeting</span><br>
+                    <img src="Person-2.jpg" alt="" width="80px">
+                    <img src="Person-5.jpg" alt="" width="80px">
+                    <img src="Person-6.jpg" alt="" width="80px">
+                </div>
+                <div id="pink">
+                    <p>10:00-12:00Pm</p>
+                    <span>Team Meeting</span><br>
+                    <img src="Person-1.jpg" alt="" width="80px">
+                    <img src="Person-5.jpg" alt="" width="80px">
+                    <img src="Person-6.jpg" alt="" width="80px">
+                    <img src="Person-4.jpg" alt="" width="80px">
+                </div>
+                <div id="green">
+                    <p>01:00-03:00Pm</p>
+                    <span>Release Event</span><br>
+                    <img src="Person-2.jpg" alt="" width="80px">
+                    <img src="Person-3.jpg" alt="" width="80px">
+                    <img src="Person-4.jpg" alt="" width="80px">
+                </div>
+                <div id="red">
+                    <p>05:00-07:00Pm</p>
+                    <span>Product Review</span><br>
+                    <img src="Person-1.jpg" alt="" width="80px">
+                    <img src="Person-6.jpg" alt="" width="80px">
+                    <img src="Person-2.jpg" alt="" width="80px">
+                    <img src="Person-3.jpg" alt="" width="80px">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
