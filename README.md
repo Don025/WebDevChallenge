@@ -1,2 +1,2 @@
 # WebDevChallenge
-This Repo include all the Web Development challenge that are uploaded in linkedin.
+This repository includes all the web development challenges that I’ve completed and shared on my LinkedIn page.
