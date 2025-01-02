@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(248, 245, 242);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+.ToolTip{
+    color: transparent;
+    visibility: hidden;
+    position: absolute;
+    font-size: larger;
+    font-weight: 500;
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-radius: 12px;
+    bottom: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo{
+    position: relative;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: rgb(249, 248, 248);
+    box-shadow: 8px 8px 12px rgb(220, 220, 220),-2px -2px 12px rgb(238, 238, 238);
+    transition: all 350ms ease-out;
+    cursor: pointer;
+}
+.logo_container div:nth-of-type(1):hover{
+    background-color: #316FF6;
+    img{
+        filter: invert();
+    }
+    .ToolTip{
+        background-color: #316FF6;
+        color: white;
+    }
+    .ToolTip::after{
+        border-top-color: #316FF6;
+    }
+}
+.logo_container div:nth-of-type(2):hover{
+    background-color: rgb(0, 0, 0);
+    img{
+        filter: invert();
+    }
+    .ToolTip{
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    .ToolTip::after{
+        border-top-color: black;
+    }
+}
+.logo_container div:nth-of-type(3):hover{
+    background-color: #E1306C;
+    img{
+        filter: invert();
+    }
+    .ToolTip{
+        background-color: #E1306C;
+        color: white;
+    }
+    .ToolTip::after{
+        border-top-color: #E1306C;
+    }
+}
+.logo_container div:nth-of-type(4):hover{
+    background-color: black;
+    img{
+        filter: invert();
+    }
+    .ToolTip{
+        background-color: black;
+        color: white;
+    }
+    .ToolTip::after{
+        border-top-color: black;
+    }
+}
+.logo_container div:nth-of-type(5):hover{
+    background-color: #FF0000;
+    img{
+        filter: invert();
+    }
+    .ToolTip{
+        background-color: #FF0000;
+        color: white;
+    }
+    .ToolTip::after{
+        border-top-color: #FF0000;
+    }
+}
+.logo:hover{
+    .ToolTip{
+        visibility: visible;
+        display: inline-block;
+        width: max-content;
+        padding: 5px 15px 5px 15px;
+        margin-bottom: 20px;
+    }
+    .ToolTip::after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top:solid  6px ;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+    }
+}
