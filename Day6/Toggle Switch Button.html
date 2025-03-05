@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Neumorphic</title>
+    <link rel="stylesheet" href="Toggle Switch Button.css">
+</head>
+<body>
+    <script>
+        function off(){
+            let off=document.getElementById("off");
+            off.classList.toggle("off")
+            let shut_1=document.getElementById("shutter_1");
+            shut_1.classList.toggle("shut_1");
+            let shut_2=document.getElementById("shutter_2");
+            shut_2.classList.toggle("shut_2");
+            let shut_3=document.getElementById("shutter_3");
+            shut_3.classList.toggle("shut_3");
+        }
+        function on(){
+            let off=document.getElementById("off");
+            off.classList.toggle("offon")
+            let shut_1=document.getElementById("shutter_1");
+            shut_1.classList.toggle("shut_1on");
+            let shut_2=document.getElementById("shutter_2");
+            shut_2.classList.toggle("shut_2on");
+            let shut_3=document.getElementById("shutter_3");
+            shut_3.classList.toggle("shut_3on");
+        }
+    </script>
+    <main>
+        <div class="button_container">
+            <div class="button" id="off" onclick="off()">OFF</div>
+            <div id="shutter_1"></div>
+            <div id="shutter_2"></div>
+            <div id="shutter_3"></div>
+            <div class="button" id="on" onclick="on()">ON</div>
+        </div>
+    </main>
+</body>
+</html>
