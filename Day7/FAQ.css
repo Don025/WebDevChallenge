@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*{
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.Content{
+    height: 0;
+    transition:height 0.25s ease-out;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 3px;
+}
+input{
+    display: none;
+}
+input[type="radio"]:checked+label .Content {
+    height:80px;
+    opacity: 1;
+    margin-top: 15px;
+    font-size: 17px;
+    padding-left: 10px;
+    border-bottom: solid 2px rgb(186, 186, 186);
+}
+input[type="radio"]:checked+label h2{
+    color: crimson;
+    border-bottom: solid 2px crimson;
+}
+input[type="radio"]:checked+label h2 div::after{
+    content: '-';
+}
+label h2{
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    border-bottom: solid 2px rgb(186, 186, 186);
+    z-index: 5;
+    cursor: pointer;
+}
+main{
+    width: 700px;
+}
+h2 div{
+    display: inline-block;
+    position: absolute;
+    border: solid 2px;
+    right: 25px;
+    text-align: center;
+    border-radius: 50%;
+    width:30px;
+    align-content: center;
+    height: 30px;
+}
+h2 div::after{
+    content: '+';
+}
+label h2:hover{
+    color: crimson;
+    border-bottom: solid 2px crimson;
+}
+.Head{
+    margin-bottom: 10px;
+}
